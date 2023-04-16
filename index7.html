@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Suu Times</title>
+    <style>
+        body {
+            height: 1000vh;
+            margin: 50px;
+        }
+        span {
+            background-color: yellowgreen;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        input:focus {
+            background-color: tomato;
+        }
+        a:visited {
+            color: tomato;
+        }
+        a:hover {
+            color: teal;
+        }
+        a:focus {
+            color: turquoise;
+        }
+        form {
+            border: 1px solid salmon;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        /* form:focus-within {
+            border-color: seagreen;
+        } */
+        form:hover input:focus {
+            background-color: sienna;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text">
+        <input type="text">
+
+        <a href="https://apple.com">Go to apple</a>
+    </div>
+
+    <form action="">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </form>
+</body>
+</html>

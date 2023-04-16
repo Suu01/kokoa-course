@@ -4,34 +4,33 @@
     <title>Suu Times</title>
     <style>
         body {
-            height: 100vh; /* body의 높이가 화면 높이의 100% */
-            margin: 20px;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column-reverse;
-            align-items: center;
-            /* flex-wrap: nowrap; */
+            height: 1000vh;
+            margin: 50px;
         }
         div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 300px;
-            height: 300px;
-            font-size: 28px;
+            position: relative;
+            width: 150px;
+            height: 150px;
             color: white;
-            background-color: teal;
-            /* display: inline-block; */
-            /* margin-right: 10.015px; */
-        }
-        #second {
             background-color: wheat;
+        }
+        /* div:last-of-type {
+            background-color: teal;
+        } */
+        /* 라이브 서버 이용하면 스크립트가 자동으로 추가되어 last-child가 작동하지 않음, 웹 브라우저로 작업 중인 html 파일 오픈하면 됨 */
+        div:first-child {
+            background-color: tomato;
+        }
+        div:last-child {
+            background-color: teal;
         }
     </style>
 </head>
 <body>
-    <div>1</div>
-    <div id="second">2</div>
-    <div>3</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
 </body>
 </html>
