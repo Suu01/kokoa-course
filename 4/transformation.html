@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Suu Times</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes superSexyCoinFlip {
+            0% {
+                transform: rotateY(0);
+            }
+            25% {
+                transform: scale(2);
+            }
+            50% {
+                border-radius: 0px;
+                transform: rotateY(180deg) translateY(100px);
+                border-color: tomato;
+                opacity: 0;
+            }
+            75% {
+                transform: scale(5);
+                /* border-radius: 20px; */
+            }
+            100% {
+                transform: rotateY(0) translateY(0);
+            }
+            /* from {
+                transform: rotateY(0);
+            }
+            to {
+                transform: rotateY(180deg) translateX(100px);
+            } */
+        }
+
+        img {
+            border: 5px solid black;
+            border-radius: 50%;
+            animation: superSexyCoinFlip 4s infinite;
+            /* animation: superSexyCoinFlip 4s ease-in-out; */
+            /* transition: transform 2s ease-in-out; */
+            /* transform: translateX(50px); */
+            /* transform: scale(2, 2); */
+            /* transform: scaleY(12); */
+            /* transform: scale(4); */
+            /* transform: rotateZ(10deg); */
+            /* transform: rotateY(85deg) rotateX(20deg) rotateZ(10deg); */
+        }
+
+        /* img:hover {
+            transform: rotateY(360deg) scale(0.5);
+        } */
+    </style>
+</head>
+<body>
+    <img src="https://nomadcoders.co/m.svg" alt="nomad">
+    <span>sdfasdgadsf</span>
+</body>
+</html>
