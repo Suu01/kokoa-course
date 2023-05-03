@@ -27,7 +27,7 @@ body {
 
 .playlist-main {
     display: flex;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 .playlist-main__image {
@@ -37,6 +37,12 @@ body {
     background-color: rgb(255, 208, 0);
     border: 2px solid black;
     margin-right: 20px;
+}
+
+.playlist-main__sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .playlist-main__sub h1 {
