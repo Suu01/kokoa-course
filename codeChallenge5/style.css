@@ -1,0 +1,128 @@
+@import "reset.css";
+
+body {
+    padding: 45px 20px;
+}
+
+/* .top-bar */
+.top-bar__list {
+    display: flex;
+    justify-content: center;
+}
+
+.top-bar__list i {
+    width: 50%;
+}
+
+.top-bar__list h2 {
+    width: 50%;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* .playlist */
+.playlist {
+    margin-top: 50px;
+}
+
+.playlist-main {
+    display: flex;
+    line-height: 2;
+}
+
+.playlist-main__image {
+    width: 170px;
+    height: 170px;
+    border-radius: 25px;
+    background-color: rgb(255, 208, 0);
+    border: 2px solid black;
+    margin-right: 20px;
+}
+
+.playlist-main__sub h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.playlist-main__sub p {
+    font-weight: 600;
+}
+
+.playlist-icon {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.playlist-icon__playbtn {
+    width: 250px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 12px;
+    border-width: 2px 2px 5px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist-icon__playbtn p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.playlist-icon__heartbtn,
+.playlist-icon__plusbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid black;
+    border-width: 2px 2px 5px 2px;
+}
+
+.palylist-list ul {
+    list-style: none;
+}
+
+.palylist-list li {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.palylist-list__img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.palylist-list__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.palylist-list h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.palylist-list li:first-child .palylist-list__img {
+    background-color: red;
+}
+
+.palylist-list li:nth-child(2) .palylist-list__img {
+    background-color: pink;
+}
+
+.palylist-list li:nth-child(3) .palylist-list__img {
+    background-color: blue;
+}
+
+.palylist-list li:nth-child(4) .palylist-list__img {
+    background-color: green;
+}
