@@ -1,124 +1,76 @@
+html,
 body {
-  background-color: rgb(75, 181, 181);
+  height: 100%;
 }
 
-section {
-  height: 100vh;
+@keyframes dotAnimation {
+  50% {
+    transform: rotate(0.5turn);
+  }
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+
+@keyframes lineAnimation {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50%,
+  100% {
+    transform: none;
+  }
+}
+
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-@keyframes rotateCircle {
-  0% {
-    transform: rotate(0deg) translate(-80px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(-80px) rotate(-360deg);
-  }
-}
-
-@keyframes rotateCircle_2 {
-  0% {
-    transform: rotate(0deg) translate(80px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(80px) rotate(-360deg);
-  }
-}
-
-.circle {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  background-color: #76c4c6;
 }
 
-.circle div {
-  position: absolute;
-  margin: auto;
-  width: 15px;
-  height: 15px;
-  overflow: hidden;
-  border-radius: 50%;
-  background-color: #fff;
-}
-
-.circle div:first-child {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  animation: rotateCircle 2s linear infinite;
-}
-
-.circle div:nth-child(2) {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.circle div:last-child {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  animation: rotateCircle_2 2s linear infinite;
-}
-
-@keyframes squareStretch {
-  0% {
-    height: 100px;
-  }
-  50% {
-    height: 150px;
-  }
-  100% {
-    height: 100px;
-  }
-}
-
-.square {
+.box {
+  width: 200px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 160px;
-  height: 200px;
-  margin: 0 auto;
-  /* background-color: red; */
+  justify-content: space-around;
 }
 
-.square div {
+.dots {
+  animation: dotAnimation 1s ease-in-out infinite;
+  margin-bottom: 200px;
+}
+
+.dot {
   width: 20px;
-  height: 100px;
-  background-color: #fff;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
 }
 
-.square div:first-child {
-  animation: squareStretch 1s linear infinite;
+.lines {
+  width: 150px;
 }
-.square div:nth-child(2) {
-  animation: squareStretch 1s linear infinite;
+
+.line {
+  width: 20px;
+  height: 80px;
+  background-color: white;
+  animation: lineAnimation 1s ease-in-out infinite;
+}
+
+.line:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.line:nth-child(3) {
   animation-delay: 0.2s;
 }
-.square div:nth-child(3) {
-  animation: squareStretch 1s linear infinite;
+.line:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.line:nth-child(5) {
   animation-delay: 0.4s;
-}
-.square div:nth-child(4) {
-  animation: squareStretch 1s linear infinite;
-  animation-delay: 0.6s;
-}
-.square div:last-child {
-  animation: squareStretch 1s linear infinite;
-  animation-delay: 0.8s;
 }
