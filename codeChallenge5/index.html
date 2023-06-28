@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="top-bar">
-        <div class="top-bar__list">
-            <i class="fa-solid fa-x"></i>
-            <h2>Playlist</h2>
-        </div>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <i class="fa-solid fa-xmark fa-2x"></i>
+        <h1>Playlist</h1>
+      </header>
+      <main>
+        <section class="main-song">
+          <div class="main-somg__img">
+            <i class="fa-solid fa-image fa-3x"></i>
+          </div>
+          <div class="main-song__des">
+            <h2 class="main-song__title">Random Love</h2>
+            <p class="main-song__author">by Divay Kapoor</p>
+          </div>
+        </section>
+        <section class="btns">
+          <span class="btns__btn btns__btn--big">
+            <i class="fa-solid fa-play fa-xl"></i>
+            <span>Play</span>
+          </span>
+          <span class="btns__btn">
+            <i class="fa-solid fa-heart fa-xl"></i>
+          </span>
+          <span class="btns__btn">
+            <i class="fa-solid fa-plus fa-xl"></i>
+          </span>
+        </section>
+        <ul class="play-list">
+          <li class="play-list__song">
+            <div class="play-list__cover"></div>
+            <div class="play-list__title">
+              <h3>Matargasti</h3>
+              <p>Mohit Chauhan</p>
+            </div>
+          </li>
+          <li class="play-list__song">
+            <div class="play-list__cover"></div>
+            <div class="play-list__title">
+              <h3>Attitude</h3>
+              <p>Lewis OfMan . Attitude</p>
+            </div>
+          </li>
+          <li class="play-list__song">
+            <div class="play-list__cover"></div>
+            <div class="play-list__title">
+              <h3>Try Everything</h3>
+              <p>Shakira . Zootopia</p>
+            </div>
+          </li>
+          <li class="play-list__song">
+            <div class="play-list__cover"></div>
+            <div class="play-list__title">
+              <h3>Sunflower</h3>
+              <p>Joseph Vincent . Sunflower</p>
+            </div>
+          </li>
+        </ul>
+      </main>
     </div>
-
-    <main class="playlist">
-        <section class="playlist-main">
-            <div class="playlist-main__image">
-            </div>
-            <div class="playlist-main__sub">
-                <h1>Random Love</h1>
-                <p>by Divay Kapoor</p>
-            </div>
-        </section>
-        <section class="playlist-icon">
-            <div class="playlist-icon__playbtn">
-                <i class="fa-sharp fa-regular fa-play"></i>
-                <p>Play</p>
-            </div>
-            <div class="playlist-icon__heartbtn">
-                <i class="fa-regular fa-heart fa-xl"></i>
-            </div>
-            <div class="playlist-icon__plusbtn">
-                <i class="fa-solid fa-plus fa-xl"></i>
-            </div>
-        </section>
-        <section class="palylist-list">
-            <ul>
-                <li>
-                    <div class="palylist-list__img"></div>
-                    <div class="palylist-list__title">
-                        <h3>Matargasti</h3>
-                        <p>Mohit Chauhan</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="palylist-list__img"></div>
-                    <div class="palylist-list__title">
-                        <h3>Attitude</h3>
-                        <p>Lewis OfMan - Attitude</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="palylist-list__img"></div>
-                    <div class="palylist-list__title">
-                        <h3>Try Everything</h3>
-                        <p>Shakira - Zootopia</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="palylist-list__img"></div>
-                    <div class="palylist-list__title">
-                        <h3>Sunflower</h3>
-                        <p>Joseph Vincent - Sunflower</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-    </main>
-
-    <script src="https://kit.fontawesome.com/84c95b62ad.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/84c95b62ad.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

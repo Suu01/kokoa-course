@@ -1,134 +1,150 @@
-@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-    padding: 45px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Baloo Tamma 2", cursive;
+  background-color: #00c6ac;
 }
 
-/* .top-bar */
-.top-bar__list {
-    display: flex;
-    justify-content: center;
+.wrapper {
+  width: 380px;
+  padding: 50px 25px;
+  background-color: #fff;
 }
 
-.top-bar__list i {
-    width: 50%;
+header {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-.top-bar__list h2 {
-    width: 50%;
-    font-size: 25px;
-    font-weight: 900;
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
 }
 
-/* .playlist */
-.playlist {
-    margin-top: 50px;
+.main-song {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.playlist-main {
-    display: flex;
-    line-height: 1.5;
+.main-somg__img {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 12px;
+  background-color: #febd18;
 }
 
-.playlist-main__image {
-    width: 170px;
-    height: 170px;
-    border-radius: 25px;
-    background-color: rgb(255, 208, 0);
-    border: 2px solid black;
-    margin-right: 20px;
+.main-somg__img i {
+  color: white;
 }
 
-.playlist-main__sub {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.main-song__des {
+  width: 52%;
 }
 
-.playlist-main__sub h1 {
-    font-size: 40px;
-    font-weight: bold;
+.main-song__title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1;
 }
 
-.playlist-main__sub p {
-    font-weight: 600;
+.main-song__author {
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.7;
 }
 
-.playlist-icon {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0;
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px 0px;
 }
 
-.playlist-icon__playbtn {
-    width: 250px;
-    height: 60px;
-    border: 2px solid black;
-    border-radius: 12px;
-    border-width: 2px 2px 5px 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btns__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  border-bottom-width: 5px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
 }
 
-.playlist-icon__playbtn p {
-    font-size: 20px;
-    font-weight: bold;
+.btns__btn--big {
+  width: 50%;
+  font-weight: 600;
+  border-radius: 10px;
 }
 
-.playlist-icon__heartbtn,
-.playlist-icon__plusbtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    width: 60px;
-    border-radius: 50%;
-    border: 2px solid black;
-    border-width: 2px 2px 5px 2px;
+.btns__btn--big span {
+  margin-left: 10px;
+  font-size: 22px;
 }
 
-.palylist-list ul {
-    list-style: none;
+.play-list {
+  display: flex;
+  flex-direction: column;
 }
 
-.palylist-list li {
-    display: flex;
-    margin-bottom: 40px;
+.play-list__song {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
 }
 
-.palylist-list__img {
-    width: 50px;
-    height: 50px;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin-right: 10px;
+.play-list__song:first-child {
+  margin-top: 0;
 }
 
-.palylist-list__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.play-list__cover {
+  width: 60px;
+  height: 60px;
+  margin-right: 12px;
+  border-radius: 10px;
+  border: 2px solid black;
 }
 
-.palylist-list h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.play-list__song:first-child .play-list__cover {
+  background-color: #f85a2a;
 }
-
-.palylist-list li:first-child .palylist-list__img {
-    background-color: red;
+.play-list__song:nth-child(2) .play-list__cover {
+  background-color: #ff89bb;
 }
-
-.palylist-list li:nth-child(2) .palylist-list__img {
-    background-color: pink;
+.play-list__song:nth-child(3) .play-list__cover {
+  background-color: #1847e5;
 }
-
-.palylist-list li:nth-child(3) .palylist-list__img {
-    background-color: blue;
+.play-list__song:last-child .play-list__cover {
+  background-color: #00c6ac;
 }
-
-.palylist-list li:nth-child(4) .palylist-list__img {
-    background-color: green;
+.play-list__title h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.play-list__title p {
+  font-size: 18px;
+  opacity: 0.8;
 }
