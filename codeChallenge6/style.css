@@ -116,10 +116,83 @@ main h2 {
 }
 
 .book-day__tag {
-  background: rgba(0, 0, 0, 0.1);
-  font-size: 14px;
+  display: block;
+  font-size: 12px;
   font-weight: 500;
   padding: 10px 20px;
-  display: block;
   border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.book-day__btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-day__mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #fdcc32;
+}
+
+.book-day__now {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 40px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+.top-books {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 15px;
+}
+
+.top-books__book {
+  margin-right: 20px;
+}
+
+.top-books__book img {
+  width: 75px;
+  border-radius: 5px;
+}
+
+.top-books__rating {
+  display: block;
+  text-align: center;
+  font-size: 5px;
+  margin-top: 10px;
+  color: #fdcc32;
+}
+
+.popular-author {
+  display: flex;
+}
+
+.popular-author img {
+  width: 140px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.popular-author__title {
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.popular-author__des {
+  opacity: 0.5;
+  font-size: 14px;
 }
