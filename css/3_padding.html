@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <title>Css - Basics</title>
     <style>
+      * {
+        border: 1px dashed black;
+      }
       html {
         background-color: tomato;
       }
@@ -30,12 +33,17 @@
         width: 50px;
         background-color: wheat;
       }
+      span {
+        border-style: dotted;
+      }
     </style>
   </head>
   <body>
     <div id="first">
       <div id="second">
-        <div id="third"></div>
+        <div id="third">
+          <span>hello</span>
+        </div>
       </div>
     </div>
   </body>
