@@ -8,26 +8,35 @@
         background-color: tomato;
       }
       body {
-        /* margin: 0; */
-        /* margin: 20px 10px;*/
-        margin: 20px 10px 10px 5px;
+        margin: 20px;
+        padding: 20px;
         background-color: thistle;
       }
       div {
+        padding: 20px;
+      }
+      div#first {
         height: 150px;
         width: 150px;
-        margin: 50px 15px;
-        background-color: white;
+        background-color: whitesmoke;
       }
-      /* span {
-        display: block;
-        background-color: turquoise;
-      } */
+      div#second {
+        height: 100px;
+        width: 100px;
+        background-color: teal;
+      }
+      div#third {
+        height: 50px;
+        width: 50px;
+        background-color: wheat;
+      }
     </style>
   </head>
   <body>
-    <div></div>
-    <!-- <span>hello</span>
-    <span>hello</span> -->
+    <div id="first">
+      <div id="second">
+        <div id="third"></div>
+      </div>
+    </div>
   </body>
 </html>
