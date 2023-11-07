@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Css - Basics</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: 1px solid salmon;
+      }
+      /* form:hover input {
+        background-color: sienna;
+      } */
+      form:hover input:focus {
+        background-color: sienna;
+      }
+      /* form:focus-within {
+        border-color: seagreen;
+      } */
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="" id="" />
+      <input type="text" name="" id="" />
+      <input type="text" name="" id="" />
+    </form>
+  </body>
+</html>
