@@ -4,24 +4,21 @@
     <meta charset="UTF-8" />
     <title>Css - Basics</title>
     <style>
+      :root {
+        --main-color: #fcce00;
+        --default-border: 1px solid var(--main-color);
+      }
       body {
         height: 1000vh;
         margin: 50px;
       }
-      p::selection {
-        color: white;
-        background-color: yellowgreen;
+      p {
+        background-color: var(--main-color);
       }
-      /* p::first-letter {
-        font-size: 50px;
-        color: white;
-        background-color: yellowgreen;
+      a {
+        color: var(--main-color);
+        border: var(--default-border);
       }
-      p::first-line {
-        font-size: 50px;
-        color: white;
-        background-color: yellowgreen;
-      } */
     </style>
   </head>
   <body>
@@ -31,5 +28,8 @@
       assumenda in nobis molestias. Ut quos eum assumenda officiis, suscipit
       dignissimos.
     </p>
+    <div>
+      <a href="#">website</a>
+    </div>
   </body>
 </html>
