@@ -4,18 +4,17 @@
     <title>Advanced - CSS</title>
     <style>
       img {
+        transition: transform 2s ease-in-out;
         border: 5px solid black;
         border-radius: 50%;
-        transform: skew(45deg);
-        /* transform: translateX(1000px); */
-        /* transform: scale(2, 2); */
-        /* transform: rotateZ(10deg); */
-        /* transform: rotateY(86deg) rotateX(20deg) rotateZ(10deg); */
+      }
+      img:hover {
+        /* transform: rotateY(360deg) scale(0.5); */
+        transform: matrix(1, 2, 3, 4, 5, 6);
       }
     </style>
   </head>
   <body>
     <img src="../css/img/logo.svg" alt="" />
-    <span>hello</span>
   </body>
 </html>
