@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Advanced - CSS</title>
+    <style>
+      @keyframes superSexyCoinFlip {
+        from {
+          transform: rotateY(0);
+        }
+        to {
+          transform: rotateY(180deg) translateX(100px);
+        }
+      }
+      img {
+        animation: superSexyCoinFlip 5s ease-in-out infinite;
+        border: 5px solid black;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../css/img/logo.svg" alt="" />
+  </body>
+</html>
