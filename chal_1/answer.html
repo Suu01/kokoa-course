@@ -1,49 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code-Challenge</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SuperForm</title>
   </head>
   <body>
-    <h1>Create An Account</h1>
-
+    <h2>Create An Account</h2>
     <form>
       <div>
-        <label for="f-name">First name</label>
-        <input id="f-name" type="text" placeholder="First name" required />
+        <label for="first-name">First name</label>
+        <input required id="first-name" type="text" placeholder="First name" />
       </div>
       <div>
-        <label for="l-name">Last name</label>
-        <input id="l-name" type="text" placeholder="Last name" required />
+        <label for="last-name">Last name</label>
+        <input required id="last-name" type="text" placeholder="Last name" />
       </div>
       <div>
         <label for="email">Email</label>
-        <input id="email" type="email" placeholder="Email" required />
+        <input required id="email" type="email" placeholder="Email" />
       </div>
       <div>
         <label for="username">Username</label>
-        <input id="username" type="text" placeholder="Username" required />
+        <input
+          required
+          id="username"
+          type="text"
+          minlength="5"
+          placeholder="Username"
+        />
       </div>
       <div>
         <label for="password">Password</label>
         <input
+          required
           id="password"
           type="password"
           minlength="10"
           placeholder="Password"
-          required
         />
       </div>
       <div>
         <label for="birth-date">Birth date</label>
-        <input id="birth-date" type="date" required />
+        <input required id="birth-date" type="date" />
       </div>
       <div>
-        <label for="how-happy">How happy are you?</label>
-        <input id="how-happy" type="range" list="happy" required />
-        <datalist id="happy">
+        <label for="kimchi-love">How happy are you?</label>
+        <input required id="kimchi-love" type="range" list="kimchi-levels" />
+        <datalist id="kimchi-levels">
           <option value="0"></option>
           <option value="10"></option>
           <option value="20"></option>
@@ -58,8 +62,8 @@
         </datalist>
       </div>
       <div>
-        <label for="color">What is your fav. color?</label>
-        <input id="color" type="color" required />
+        <label for="fa-color">What is your fav. color?</label>
+        <input required id="fa-color" type="color" />
       </div>
       <div>
         <input type="submit" value="Create Account" />
